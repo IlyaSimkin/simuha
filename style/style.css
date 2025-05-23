@@ -1,0 +1,428 @@
+body{
+    background-color: #161a20;
+}
+
+
+.footer_simuha{
+    display: none;
+    background-color: #1c2027;
+    height: 300px;
+}
+
+
+
+.simuha_block_wrapp{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;   
+}
+.simuha_text{
+    text-align: center;
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+    /* background: linear-gradient(90deg,rgba(80, 242, 93, 1) 0%, rgba(87, 199, 133, 1) 49%, rgba(237, 221, 83, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    color:#61ee79;
+    font-size: 50px;
+    padding-top: 20px;
+
+}
+
+.simuha_img{
+    width: 120px;
+}
+
+.simuha_img_wrapp{
+    display: flex;
+    justify-content: center;
+}
+
+
+.container{
+    margin: 0 auto;
+    width: 1800px;
+}
+
+    canvas {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+
+.simuha_img {
+    position: relative; /* или absolute/fixed в зависимости от контекста */
+    top: -100px; /* изначально чуть выше экрана */
+    opacity: 0;
+    filter: 
+    drop-shadow(0 0 30px rgba(155, 243, 155, 0.7))
+    drop-shadow(0 0 50px rgba(165, 255, 165, 0.5))
+    drop-shadow(0 0 70px rgba(140, 255, 140, 0.411));
+    transition: top 0.5s ease, opacity 0.5s ease, filter 0.3s ease;
+}
+
+.simuha_img:hover {
+  filter: 
+    drop-shadow(0 0 40px #93ff93)
+    drop-shadow(0 0 70px rgba(177, 255, 177, 0.534))
+    drop-shadow(0 0 100px rgba(159, 255, 159, 0.5));
+}
+
+.simuha_img.active {
+  top: 0;
+  opacity: 1;
+}
+
+
+.strelka_img{
+    cursor: pointer;
+    width: 60px;
+    margin-top: 50px;
+    animation: upDown 2s infinite;
+}
+
+.strelka_img_vverh{
+    cursor: pointer;
+    width: 60px;
+    margin-top: 50px;
+    animation: upDown 2s infinite;
+}
+
+.strelka_wrapp{
+    display: flex;
+    justify-content: center;
+}
+
+.text{
+    color: white;
+    font-size: 40px;
+}
+
+
+.title{
+    color: white;
+    padding-top: 10px;
+}
+.text_block{
+    font-family: "Martian Mono", monospace;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.text_project{
+    font-family: "Martian Mono", monospace;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.projects{
+    margin-top: 100px;
+}
+
+.project_img{
+    width: 400px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.project_info{
+    background-color: white;
+    width: 400px;
+    height: 300px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.project_text_block{
+    padding-left: 15px;
+    padding-top: 25px;
+}
+.project_text{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.project_title{
+    width: 360px;
+    padding-top: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px; 
+}
+
+.project_text_block_year{
+    display: flex;
+}
+
+.year{
+    font-family: "Roboto", sans-serif;
+    color: #6580cd;
+    text-align: center;
+}
+
+
+.year_block{
+    position: absolute;
+    width: 55px;/* чтобы занять весь экран, например */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dbeafe;
+    border-radius: 20px;
+    left: 80%;
+}
+
+
+.programms_block{
+    display: flex;
+    gap: 30px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.programm_text{
+    font-family: "Martian Mono", monospace;
+    font-size: 14px;
+}
+
+.programm_wrapp{
+      position: relative;
+    width: 55px;/* чтобы занять весь экран, например */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f4f6;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+
+.sslka_img{
+    width: 30px;
+    height: 30px;
+}
+
+
+.project_site{
+    margin-left: 15px;
+    margin-top: 30px;
+}
+
+
+.project_sslka{
+    display: flex;
+    cursor: pointer;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+
+.sslka_title{
+    font-family: "Roboto", sans-serif;
+    color: #3971ed;
+    font-weight: 500;
+    padding-top: 5px;
+
+}
+
+
+.project_sslka:hover .sslka_title {
+  color: #203259;
+}
+
+.github_img{
+    width: 50px;
+}
+
+.project_github{
+    display: flex;
+    cursor: pointer;
+}
+
+
+.project_site{
+    display: flex;
+    gap: 40px;
+}
+
+
+.github_title{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    padding-top: 15px;
+    color: rgb(80, 80, 80);
+}
+
+
+.project_github:hover .github_title{
+    color: black;
+}
+
+.project {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project_active{
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project_active:hover .prosmtr_block{
+    opacity: 0;
+}
+.project:hover {
+    transform: scale(1.01) translateY(-5px);
+}
+
+.project:hover .programm_wrapp{
+    background-color: #e9e9e9;
+    color: #001931;
+}
+
+
+.project_active:hover {
+    transform: scale(1.01) translateY(-5px);
+}
+
+.project_active:hover .programm_wrapp{
+      background-color: #e9e9e9;
+}
+
+
+
+
+
+
+
+
+.projects_block{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Три колонки */
+    margin-top: 70px;
+    gap: 290px;
+}
+
+
+.section_simuha{
+    display: none;
+    padding-bottom: 100px;
+}
+
+
+.projects_category{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 50px;
+}
+
+
+.category_title{
+    font-family: "Martian Mono", monospace;
+    color: #6581cdab;
+    font-size: 18px;
+}
+
+
+.project_category{
+    position: relative;
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dbeafe;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.project_category_click{
+    background-color: #a9ceff;
+}
+
+
+.category_title_click{
+    font-weight: 600;
+}
+
+
+.footer_title{
+    font-family: "Martian Mono", monospace;
+    color: white;
+    padding-left: 10px;
+}
+
+
+.footer_title_block{
+    display: grid;
+    align-items: end;
+    height: 300px;
+}
+
+
+.footer_img{
+    width: 55px;
+    height: 50px;
+}
+
+
+.footer_wrapp_logo{
+    display: flex;
+}
+
+.footer_text{
+    font-family: "Rubik Mono One", monospace;
+    font-size: 20px;
+    background: -webkit-linear-gradient(90deg, #414d5a,#2f3944);/* Chrome 10-25, Safari 5.1-6 */                          
+    background: linear-gradient(90deg, #414d5a,#2f3944);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 25px;                   
+}
+
+
+.new_block{
+    font-family: "Roboto", sans-serif;
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffb17c;
+    border-radius: 0px 15px 15px 0px;
+    cursor: pointer;
+    color: #FFFF;
+    font-weight: 600;
+    bottom: 300px;
+}
+
+.prosmtr_block{
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    width: 120px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d6d6d6;
+    border-radius: 15px 0px 15px 0px;
+    color: #0033668e;
+    font-weight: 600;
+    transition: 0.5s all;
+
+}
+
+.prosmtr_wrapper{
+    display: flex;
+    justify-content: center;
+}
+
