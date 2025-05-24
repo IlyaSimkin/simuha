@@ -413,9 +413,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #d6d6d6;
+    background-color: #a9c4ff;
     border-radius: 15px 0px 15px 0px;
-    color: #0033668e;
+    color: #ffffff;
     font-weight: 600;
     transition: 0.5s all;
 
