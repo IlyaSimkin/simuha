@@ -164,6 +164,10 @@ $(document).ready(function(){
       'display': 'block'
     })
 
+    $('.dalee_simuha').css({
+      'display': 'block'
+    })
+
 
 
 
@@ -194,8 +198,7 @@ $(document).ready(function(){
       $('.section_simuha').css({
         'display': 'none'
       })
-
-})
+  })
 
 
 
@@ -214,12 +217,6 @@ $(document).ready(function(){
 
 
 
-
-
-})
-
-
-
     $('.active').click(function(){
       $('.project').hide();
     })
@@ -228,6 +225,8 @@ $(document).ready(function(){
       $('.project').show();
     })
 
+
+})
 
 
 

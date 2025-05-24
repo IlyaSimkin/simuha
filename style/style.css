@@ -426,3 +426,12 @@ body{
     justify-content: center;
 }
 
+
+hr{
+    border: rgb(255, 255, 255) solid 1px;
+    margin-top: 150px;
+}
+
+.dalee_simuha{
+    display: none;
+}
