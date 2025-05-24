@@ -1,3 +1,7 @@
+
+
+
+
 window.addEventListener('load', () => {
   const img = document.querySelector('.simuha_img');
   img.classList.add('active');
