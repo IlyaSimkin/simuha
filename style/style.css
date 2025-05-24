@@ -90,7 +90,7 @@ body{
     cursor: pointer;
     width: 60px;
     margin-top: 50px;
-    animation: upDown 2s infinite;
+    animation: upDown 1.5s infinite;
 }
 
 .strelka_img_vverh{
