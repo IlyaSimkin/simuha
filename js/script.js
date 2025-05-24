@@ -226,6 +226,13 @@ $(document).ready(function(){
     })
 
 
+    $('.strelka_img_dalee').click(function(){
+      $('.programm_simuha').css('display', 'block')
+      $('.section_simuha').css('display', 'none')
+      $('.dalee_simuha').css('display', 'none')
+    })
+
+
 })
 
 

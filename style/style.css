@@ -446,4 +446,10 @@ hr{
 
 .dalee_simuha{
     display: none;
+    padding-bottom: 100px;
+}
+
+.programm_simuha{
+    display: none;
+    padding-top: 10px;
 }
