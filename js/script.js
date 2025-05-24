@@ -227,9 +227,22 @@ $(document).ready(function(){
 
 
     $('.strelka_img_dalee').click(function(){
+
+      setTimeout(function(){
+        e.preventDefault(); // отменяем переход по ссылке
+        $('html, body').animate({
+          scrollTop: $('.programm_simuha').offset().top
+        }, 800); // 800 мс — длительность анимации
+      }, 100)
+
+
       $('.programm_simuha').css('display', 'block')
-      $('.section_simuha').css('display', 'none')
-      $('.dalee_simuha').css('display', 'none')
+
+      setTimeout(function(){
+        $('.section_simuha').css('display', 'none')
+        $('.dalee_simuha').css('display', 'none')
+      }, 1000)
+
     })
 
 
